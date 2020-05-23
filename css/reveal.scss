@@ -679,11 +679,13 @@ $controlsArrowAngleActive: 36deg;
 	height: 100%;
 }
 
-.reveal .slides>section.present,
-.reveal .slides>section>section.present {
-	display: block;
-	z-index: 11;
-	opacity: 1;
+.reveal .slides > section.present, .reveal .slides > section > section.present {
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: 0 !important;
 }
 
 .reveal .slides>section:empty,
